@@ -12,6 +12,9 @@
 		B8648B94261DC6BD007A861E /* SearchResultCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8648B93261DC6BD007A861E /* SearchResultCell.swift */; };
 		B8648B98261DC963007A861E /* NothingFoundCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B8648B97261DC963007A861E /* NothingFoundCell.xib */; };
 		B87394212622ECCC00B5F24F /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B87394202622ECCC00B5F24F /* DetailViewController.swift */; };
+		B8739425262324C500B5F24F /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8739424262324C500B5F24F /* GradientView.swift */; };
+		B87394282623300900B5F24F /* BounceAnimationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B87394272623300900B5F24F /* BounceAnimationController.swift */; };
+		B873942B2623339000B5F24F /* SlideOutAnimationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B873942A2623339000B5F24F /* SlideOutAnimationController.swift */; };
 		B8D884632621DA0F0044FF62 /* LoadingCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B8D884622621DA0F0044FF62 /* LoadingCell.xib */; };
 		B8D8846926221BBE0044FF62 /* UIImageView+DownloadImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8D8846826221BBE0044FF62 /* UIImageView+DownloadImage.swift */; };
 		B8EA3A80261B714E00D127C1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8EA3A7F261B714E00D127C1 /* AppDelegate.swift */; };
@@ -27,6 +30,9 @@
 		B8648B93261DC6BD007A861E /* SearchResultCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResultCell.swift; sourceTree = "<group>"; };
 		B8648B97261DC963007A861E /* NothingFoundCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NothingFoundCell.xib; sourceTree = "<group>"; };
 		B87394202622ECCC00B5F24F /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		B8739424262324C500B5F24F /* GradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
+		B87394272623300900B5F24F /* BounceAnimationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BounceAnimationController.swift; sourceTree = "<group>"; };
+		B873942A2623339000B5F24F /* SlideOutAnimationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlideOutAnimationController.swift; sourceTree = "<group>"; };
 		B8D884622621DA0F0044FF62 /* LoadingCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoadingCell.xib; sourceTree = "<group>"; };
 		B8D8846826221BBE0044FF62 /* UIImageView+DownloadImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+DownloadImage.swift"; sourceTree = "<group>"; };
 		B8EA3A7C261B714E00D127C1 /* StoreSearch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StoreSearch.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -71,9 +77,12 @@
 				B8EA3A7F261B714E00D127C1 /* AppDelegate.swift */,
 				B8EA3A81261B714E00D127C1 /* SceneDelegate.swift */,
 				B8EA3A83261B714E00D127C1 /* SearchViewController.swift */,
+				B8739424262324C500B5F24F /* GradientView.swift */,
 				B8179284261B8F4A00A47E03 /* SearchResult.swift */,
 				B8648B93261DC6BD007A861E /* SearchResultCell.swift */,
 				B87394202622ECCC00B5F24F /* DetailViewController.swift */,
+				B873942A2623339000B5F24F /* SlideOutAnimationController.swift */,
+				B87394272623300900B5F24F /* BounceAnimationController.swift */,
 				B8648B90261DC016007A861E /* SearchResultCell.xib */,
 				B8648B97261DC963007A861E /* NothingFoundCell.xib */,
 				B8D884622621DA0F0044FF62 /* LoadingCell.xib */,
@@ -161,9 +170,12 @@
 				B8EA3A80261B714E00D127C1 /* AppDelegate.swift in Sources */,
 				B8D8846926221BBE0044FF62 /* UIImageView+DownloadImage.swift in Sources */,
 				B8179285261B8F4A00A47E03 /* SearchResult.swift in Sources */,
+				B87394282623300900B5F24F /* BounceAnimationController.swift in Sources */,
 				B8EA3A82261B714E00D127C1 /* SceneDelegate.swift in Sources */,
 				B8648B94261DC6BD007A861E /* SearchResultCell.swift in Sources */,
+				B8739425262324C500B5F24F /* GradientView.swift in Sources */,
 				B87394212622ECCC00B5F24F /* DetailViewController.swift in Sources */,
+				B873942B2623339000B5F24F /* SlideOutAnimationController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

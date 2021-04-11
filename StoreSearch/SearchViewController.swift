@@ -33,6 +33,8 @@ class SearchViewController: UIViewController {
         tableView.register(cellNib, forCellReuseIdentifier: TableView.CellIdentifiers.loadingCell)
         
         searchBar.becomeFirstResponder()
+        
+        //listenForContentSizeCategoryDidChangeNotification()
     }
     
     struct TableView {
@@ -42,6 +44,14 @@ class SearchViewController: UIViewController {
             static let loadingCell = "LoadingCell"
         }
     }
+    
+//    func listenForContentSizeCategoryDidChangeNotification() {
+//        NotificationCenter.default.addObserver(forName: UIContentSizeCategory.didChangeNotification, object: nil, queue: OperationQueue.main) { [weak self] _ in
+//            guard let weakSelf = self else { return }
+//            weakSelf.tableView.reloadData()
+//            print("FONT SIZE DID CHANGE. RELOADING TABLEVIEW.")
+//        }
+//    }
     
     // MARK: - Actions
     @IBAction func segmentChanged(_ sender: UISegmentedControl) {
