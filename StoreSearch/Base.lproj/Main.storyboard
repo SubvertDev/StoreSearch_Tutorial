@@ -30,7 +30,7 @@
                                 <rect key="frame" x="0.0" y="56" width="667" height="32"/>
                                 <items>
                                     <barButtonItem style="plain" id="HFS-Go-BCG">
-                                        <segmentedControl key="customView" opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="bar" selectedSegmentIndex="0" id="E06-4e-6rB">
+                                        <segmentedControl key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="bar" selectedSegmentIndex="0" id="E06-4e-6rB">
                                             <rect key="frame" x="20" y="0.0" width="627" height="32"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <segments>
