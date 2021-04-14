@@ -105,6 +105,12 @@ class DetailViewController: UIViewController {
             downloadTask = artworkImageView.loadImage(url: largeURL)
         }
         popupView.isHidden = false
+        popupView.alpha = 0
+        popupView.layer.cornerRadius = 10
+        UIView.animate(withDuration: 0.3,
+                       animations: {
+                        self.popupView.alpha = 1
+                       }, completion: nil)
     }
     
     enum AnimationStyle {

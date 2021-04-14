@@ -18,6 +18,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         // This delegate does not imply the connecting scene or session are new (see `application:configurationForConnectingSceneSession` instead).
         guard let _ = (scene as? UIWindowScene) else { return }
         searchVC.splitViewDetail = detailVC
+        splitVC.delegate = self
     }
 
     func sceneDidDisconnect(_ scene: UIScene) {
@@ -64,3 +65,11 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     }
 }
 
+extension SceneDelegate: UISplitViewControllerDelegate {
+    func splitViewController(_ svc: UISplitViewController, topColumnForCollapsingToProposedTopColumn proposedTopColumn: UISplitViewController.Column) -> UISplitViewController.Column {
+        if UIDevice.current.userInterfaceIdiom == .phone {
+            return .primary
+        }
+        return proposedTopColumn
+    }
+}

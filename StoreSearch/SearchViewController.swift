@@ -40,6 +40,12 @@ class SearchViewController: UIViewController {
         title = NSLocalizedString("Search", comment: "Split view primary button")
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        if UIDevice.current.userInterfaceIdiom == .phone {
+            navigationController?.navigationBar.isHidden = true
+        }
+    }
+    
     struct TableView {
         struct CellIdentifiers {
             static let searchResultCell = "SearchResultCell"
@@ -113,6 +119,7 @@ class SearchViewController: UIViewController {
                 let indexPath = sender as! IndexPath
                 let searchResult = list[indexPath.row]
                 detailViewController.searchResult = searchResult
+                detailViewController.isPopUp = true
             }
         }
     }
