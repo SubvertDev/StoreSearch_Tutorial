@@ -81,7 +81,6 @@ class Search {
         
         let encodedText = searchText.addingPercentEncoding(withAllowedCharacters: CharacterSet.urlQueryAllowed)!
         let urlString = "https://itunes.apple.com/search?term=\(encodedText)&limit=200&entity=\(kind)&lang=\(language)&country=\(countryCode)"
-        print(urlString)
         let url = URL(string: urlString)
         return url!
     }
@@ -92,7 +91,6 @@ class Search {
             let result = try decoder.decode(ResultArray.self, from: data)
             return result.results
         } catch {
-            print("JSON Error: \(error)")
             return []
         }
     }

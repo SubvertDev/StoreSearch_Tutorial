@@ -126,7 +126,7 @@ class DetailViewController: UIViewController {
         popover.modalPresentationStyle = .popover
         if let ppc = popover.popoverPresentationController {
             ppc.barButtonItem = sender
-            ppc.passthroughViews = [self.view] // How to add another view?
+            ppc.passthroughViews = [self.view]
         }
         popover.delegate = self
         present(popover, animated: true, completion: nil)
@@ -159,9 +159,6 @@ extension DetailViewController: UIViewControllerTransitioningDelegate {
 extension DetailViewController: MenuViewControllerDelegate {
     func menuViewControllerSendEmail(_ controller: MenuViewController) {
         dismiss(animated: true) {
-            print("dismissing")
-            let check = MFMailComposeViewController.canSendMail()
-            print("check is \(check)")
             if MFMailComposeViewController.canSendMail() {
                 let controller = MFMailComposeViewController()
                 controller.mailComposeDelegate = self

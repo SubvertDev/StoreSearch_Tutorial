@@ -7,7 +7,7 @@
 
 import UIKit
 
-protocol MenuViewControllerDelegate: class {
+protocol MenuViewControllerDelegate: AnyObject {
     func menuViewControllerSendEmail(_ controller: MenuViewController)
 }
 
