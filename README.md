@@ -3,4 +3,4 @@
 Networking, UI stuff and landscape modes!
 
 ## Screenshots
-![Screenshots](https://i.imgur.com/t3UGnUK.png)
+![Screenshots](https://gcdnb.pbrd.co/images/XcOKBDApeWl7.png?o=1)
